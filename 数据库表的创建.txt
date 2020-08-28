@@ -1,0 +1,32 @@
+# 存储异常信息
+create table exception(
+  time timestamp not null primary key,
+  message text not null
+);
+# 用于存储班级信息
+create table class(
+    classId int not null primary key unique auto_increment,
+    className varchar(16) not null ,
+    loginTime timestamp not null
+                  
+);
+# 存储用户信息
+create table account (
+    id int not null auto_increment  primary key unique ,
+    password varchar(16) not null ,
+    loginTime timestamp not null,
+    classId int not null ,
+    constraint foreign key(classId) references class(classId)
+);
+# 储存用户名字
+create table nameTable(
+    name varchar(16) not null primary key  unique ,
+    id int not null auto_increment unique,
+    constraint foreign key (id) references account(id)
+);
+# 用于储存用户头像
+create table headImg(
+    id int not null primary key ,
+    img BLOB ,
+    constraint foreign key (id) references account(id)
+);
