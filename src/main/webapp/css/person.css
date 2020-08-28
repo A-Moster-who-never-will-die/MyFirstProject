@@ -1,0 +1,14 @@
+body{
+    background-color: darkorchid;
+}
+#table{
+    width: 50%;
+    background-color: #32cc3a;
+    border:2px solid #fff324;
+    text-align: center;
+    margin: auto;
+}
+#yourHead{
+    height: 70px;
+    width: 30px;
+}

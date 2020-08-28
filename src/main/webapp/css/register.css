@@ -1,0 +1,29 @@
+#caption{
+    color: #00028b;
+    font-size: large;
+}
+#submit{
+    color: brown;
+    border: 3px solid #31e22b;
+    background-color: aqua;
+    width:60px;
+    height: 40px;
+    text-align: center;
+}
+#form{
+    width: 50%;
+    background-color:darkorchid;
+    border:2px solid #fff324;
+    text-align: center;
+    margin: auto;
+}
+#repeatimg{
+    width: 25px;
+    height: 25px;
+}
+#nameImg{width: 25px;
+    height: 25px;}
+body {
+    background: url("/img/homework.jpg") no-repeat center;
+    background-size: cover;
+}
